@@ -73,7 +73,7 @@ def post_detail(request, year, month, day, post):
             new_comment.save()
     else:
         comment_form = CommentForm()
-        return render(request,
+    return render(request,
                   'blog/post/detail.html',
                   {'post':post,
                    'comments':comments,
